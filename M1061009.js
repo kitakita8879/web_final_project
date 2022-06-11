@@ -1,10 +1,11 @@
 import { useState,useRef,useEffect } from "react";
-import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView, Button } from 'react-native';
 
 export const M1061009Screen = ({route, navigation}) =>{
     return (
         <ScrollView style={StyleSheet.container}>
             <Text>M1061009</Text>
+            <Button title="Go Home" onPress={()=>navigation.navigate("Home")}></Button>
         </ScrollView>
     )
 }
