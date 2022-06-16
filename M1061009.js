@@ -3,8 +3,7 @@ import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView, Button } f
 
 export const M1061009Screen = ({route, navigation}) =>{
     return (
-        <ScrollView style={StyleSheet.container}>
-            <Text>M1061009</Text>
+        <ScrollView style={styles.container}>
             <Button title="Go Home" onPress={()=>navigation.navigate("Home")}></Button>
         </ScrollView>
     )
