@@ -27,7 +27,7 @@ const ProjectCard = ({key,title,description,logo,link,technologies}) => {
           cursor="pointer"
           _hover={{ shadow: "lg" }}
         >
-          <Image  style={[{width:(isNotSmallerScreen)?'30vw':'90vw', height:'22vh', borderRadius:2,}]} source={{ logo}}/>
+          <Image  style={[{width:(isNotSmallerScreen)?'30vw':'80vw',height:'30vh', borderRadius:2,resizeMode: 'contain'}]} source={logo}/>
           <VStack align="start" justify="flex-start">
             <VStack spacing={0} align="start">
                 <motion.div layout >

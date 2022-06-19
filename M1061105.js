@@ -5,7 +5,7 @@ import { useMediaQuery } from '@chakra-ui/media-query';
 import ICON from 'react-native-vector-icons/FontAwesome';
 import MaterialICON from 'react-native-vector-icons/MaterialCommunityIcons';
 import ProjectCard from "./projectCard";
-import { projectsList1105 } from "./data/1105data";
+import { projectsList1105 } from "./assets/1105data";
 
 export const M1061105Screen = ({route, navigation}) =>{
 
@@ -41,11 +41,11 @@ export const M1061105Screen = ({route, navigation}) =>{
                     </View>
                     
                     <View style={styles.edu_app}>
-                        <Text fontWeight="bold" fontSize="3xl">技能</Text>
+                        <Text fontWeight="bold" fontSize="3xl">專長</Text>
                         <Flex rounded="xl" borderWidth="1px" borderLeftWidth="5px" direction="row" flexWrap="wrap" mt={8} bg="white" borderColor="gray.100" w={(isNotSmallerScreen) ? '70vw':'90vw'} borderLeftColor="blue.100" justify="flex-start" _hover={{shadow: "lg" }}>
                                 
                             <Text color="gray.700" p="4" fontSize="xl" fontWeight="semibold">
-                                HTML、CSS、JavaScript、MySQL、Python、JAVA、C、Android Studio <br/> PhotoShop、Illustration、Adobe Effect、Maya、Unity
+                                HTML、CSS、MySQL <br/> Illustration、Maya、Unity
                             </Text>
                         </Flex>
                     </View>
