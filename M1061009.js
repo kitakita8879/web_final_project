@@ -27,17 +27,16 @@ export const M1061009Screen = ({route, navigation}) =>{
                         spacing="200px" p={isNotSmallerScreen ? "0" : "16"}
                         alignSelf="flex-start">
                         <Box mt={isNotSmallerScreen ? "0" : 16} align='flex-start'>
-                            <Text fontSize="4xl" fontWeight="semibold">Hi, I am</Text>
-                            <Text fontSize="7xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text' >Pawan Kumar</Text>
-                            <Text color={"gray"}>GDE - Flutter, Firebase. Founder of https://codepur.dev & https://velocityx.dev.
-                        Building @frontierdotxyz, YouTuber & Entrepreneur 🗣</Text>
+                            <Text fontSize="4xl" fontWeight="semibold">Hello, 我是</Text>
+                            <Text fontSize="7xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text' >陳加齊</Text>
+                            <Text color={"gray"}>就讀於彰師資管所，從⼩立志成為電腦工程師</Text>
                        
                         </Box>
                         
                         <Image alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
                             mb={isNotSmallerScreen ? "0" : "12"} borderRadius='full'
                             backgroundColor="transparent" boxShadow="lg"
-                            boxSize="300px" src='https://cdn.pixabay.com/photo/2015/07/09/22/45/tree-838667_960_720.jpg' />
+                            boxSize="200px" src='https://thumbs2.imgbox.com/a4/bf/fa4MwX7q_t.jpg' />
                     </Flex>
                 </Stack>
 
@@ -46,22 +45,22 @@ export const M1061009Screen = ({route, navigation}) =>{
                 
                 {/* Big title*/}
 
-                <Box alignSelf="center" px="32" py="16">
+                {/* <Box alignSelf="center" px="32" py="16">
                     <Heading fontWeight="extrabold" color="cyan.500" size="4xl">
                         7+
                     </Heading>
                     <Text fontSize="2xl" color="gray.400">Years of Experience</Text>
-                </Box>
+                </Box> */}
 
                 {/* content*/}
 
                 <Box alignSelf="center" px="32" py="16">
-                    <Text fontWeight="bold" fontSize="2xl">Product Designer and Developer, specialised in mobile app development.</Text>
+                    <Text fontWeight="bold" fontSize="2xl">Back-End Development and Android APP Development</Text>
                 
                 {/* icon link */}
                 <Flex direction={isNotSmallerScreen ? "row" : "column"} mt={8} >
                     <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallerScreen ? 4 : 0} h="5vh" w="10vh" justify="flex-end">
-                        <ICON name="github" size={50} href="https://github.com/kitakita8879" target="_blank"/>
+                        <ICON name="github" size={50} href="https://github.com/jiamax" target="_blank"/>
                     </Flex>
                     <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallerScreen ? 4 : 0} h="5vh" w="10vh" justify="flex-end" >
                         <MaterialICON name="pinterest" size={50} href="https://www.pinterest.com/kitakita8879/_saved/" target="_blank"/>
