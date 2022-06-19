@@ -1,6 +1,6 @@
 import { useState,useRef,useEffect } from "react";
 import { StyleSheet,Image, ScrollView, Button, View} from 'react-native';
-import { Flex, Text,VStack, SimpleGrid } from "@chakra-ui/react";
+import { Flex, Text,VStack,HStack, SimpleGrid } from "@chakra-ui/react";
 import { useMediaQuery } from '@chakra-ui/media-query';
 import ICON from 'react-native-vector-icons/FontAwesome';
 import MaterialICON from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -31,38 +31,27 @@ export const M1061105Screen = ({route, navigation}) =>{
                     <ICON name="twitter" size={50} href="https://twitter.com/euncucudin" target="_blank"/>
                 </View>
 
-                <View style={[{flexDirection:(isNotSmallerScreen) ? 'row':'column',justifyContent:'center'}]}>
-                    <View style={styles.edu_app}>
-                        <Text fontSize="2xl" color="gray.400">彰化師範大學</Text>
-                        <Text fontSize="2xl" color="gray.400">數位內容科技與管理所</Text>
-                    </View>
-                    <View style={styles.edu_app}>
-                        <Text fontWeight="bold" fontSize="2xl">曾經製作的專案有android app、web、unity</Text>
-                        <View style={{flexDirection:(isNotSmallerScreen) ? "row" : "column", marginTop:'8' }}>
-                            <Flex rounded="xl" direction="column" mt={4} bg="blue.400" h="20vh" w="30vh" justify="flex-end" _hover={{bg:"blue.200"}}>
-                                <ICON color="black" padding="4" name="android" size={50} />
-                                <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
-                                    Android App
-                                </Text>
-                            </Flex>
-                            <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallerScreen ? 4 : 0} bg="teal.400" h="20vh" w="30vh" justify="flex-end" _hover={{ bg: "teal.200", }}>
-                                <MaterialICON color="black"  padding="4" name="language-html5"  size={50} />
-                                <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
-                                    Web Apps
-                                </Text>
-                            </Flex>
-                            <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallerScreen ? 4 : 0} bg="green.400" h="20vh" w="30vh" justify="flex-end" _hover={{ bg: "green.200", }}>
-                                <MaterialICON color="black"  padding="4" name="unity"  size={50} />
-                                <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
-                                    Unity Games
-                                </Text>
-                            </Flex>
-                        </View>
-                    </View>
-                </View>
-                
                 <View style={{width:(isNotSmallerScreen) ? '70vw':'90vw',alignSelf:'center', marginTop:24}}>
-                    <Text fontWeight="bold" fontSize="3xl" align="center">作品</Text>
+                
+                    <View style={styles.edu_app}>
+                        <Text fontWeight="bold" fontSize="3xl" >學歷</Text>
+                        <View style={{flexDirection:(isNotSmallerScreen) ?"row":"column",alignItems:(isNotSmallerScreen) ?"flex-start":"center"}}>
+                            <Image style={[styles.img,{width:100,height:100}]} source={{ uri: 'https://rpage.ncue.edu.tw/var/file/0/1000/img/19/LOGO1.jpg' }}/>
+                            <Text fontSize="2xl" color="gray.700" justify="center" alignSelf="center" ml={(isNotSmallerScreen) ?'12':'0'}>彰化師範大學資訊管理學系  數位內容科技與管理所</Text>    
+                        </View>
+                        
+                    </View>
+                    <View style={styles.edu_app}>
+                        <Text fontWeight="bold" fontSize="3xl">技能</Text>
+                        <Flex rounded="xl" borderWidth="1px" borderLeftWidth="5px" direction="row" flexWrap="wrap" mt={8} bg="white" borderColor="gray.100" w={(isNotSmallerScreen) ? '70vw':'90vw'} borderLeftColor="blue.100" justify="flex-start" _hover={{shadow: "lg" }}>
+                                
+                            <Text color="gray.700" p="4" fontSize="xl" fontWeight="semibold">
+                                HTML、CSS、JavaScript、MySQL、Python、JAVA、C、Android Studio <br/> PhotoShop、Illustration、Adobe Effect、Maya、Unity
+                            </Text>
+                        </Flex>
+                    </View>
+                
+                    <Text fontWeight="bold" fontSize="3xl" align="start">作品</Text>
                     <VStack align="start" spacing={4} >
                         <SimpleGrid columns={1} spacing={16} mt={5} w="100%">
                         {projectsList1105.map((project, index) => (
@@ -117,8 +106,7 @@ const styles = StyleSheet.create({
         justifyContent:'space-evenly',
     },
     edu_app:{
-        alignSelf:'center',
-        paddingHorizontal:32,
+        alignSelf:'flex-start',
         paddingVertical:16,
     },
 });
