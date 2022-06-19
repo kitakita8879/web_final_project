@@ -1,6 +1,6 @@
 import { useState,useRef,useEffect } from "react";
 import { StyleSheet,Image, ScrollView, Button, View} from 'react-native';
-import { Flex, Text,VStack,HStack, SimpleGrid } from "@chakra-ui/react";
+import { Flex, Text,VStack, SimpleGrid } from "@chakra-ui/react";
 import { useMediaQuery } from '@chakra-ui/media-query';
 import ICON from 'react-native-vector-icons/FontAwesome';
 import MaterialICON from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -32,15 +32,14 @@ export const M1061105Screen = ({route, navigation}) =>{
                 </View>
 
                 <View style={{width:(isNotSmallerScreen) ? '70vw':'90vw',alignSelf:'center', marginTop:24}}>
-                
                     <View style={styles.edu_app}>
                         <Text fontWeight="bold" fontSize="3xl" >學歷</Text>
                         <View style={{flexDirection:(isNotSmallerScreen) ?"row":"column",alignItems:(isNotSmallerScreen) ?"flex-start":"center"}}>
                             <Image style={[styles.img,{width:100,height:100}]} source={{ uri: 'https://rpage.ncue.edu.tw/var/file/0/1000/img/19/LOGO1.jpg' }}/>
                             <Text fontSize="2xl" color="gray.700" justify="center" alignSelf="center" ml={(isNotSmallerScreen) ?'12':'0'}>彰化師範大學資訊管理學系  數位內容科技與管理所</Text>    
-                        </View>
-                        
+                        </View> 
                     </View>
+                    
                     <View style={styles.edu_app}>
                         <Text fontWeight="bold" fontSize="3xl">技能</Text>
                         <Flex rounded="xl" borderWidth="1px" borderLeftWidth="5px" direction="row" flexWrap="wrap" mt={8} bg="white" borderColor="gray.100" w={(isNotSmallerScreen) ? '70vw':'90vw'} borderLeftColor="blue.100" justify="flex-start" _hover={{shadow: "lg" }}>
