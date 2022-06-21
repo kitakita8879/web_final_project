@@ -8,6 +8,8 @@ import MaterialICON from 'react-native-vector-icons/MaterialCommunityIcons';
 import ICON from 'react-native-vector-icons/FontAwesome';
 import { projectsList1009 } from "./assets/1105data";
 import ProjectCard from "./projectCard";
+import Typical from 'react-typical'
+
 
 
 
@@ -27,13 +29,17 @@ export const M1061009Screen = ({route, navigation}) =>{
                     
                     
                     <Flex direction={isNotSmallerScreen ? "row" : "column"}
-                        spacing="200px" p={isNotSmallerScreen ? "0" : "16"}
+                        spacing="300px" p={isNotSmallerScreen ? "0" : "16"}
                         alignSelf="flex-start">
 
                         <Box mt={isNotSmallerScreen ? "0" : 16} align='flex-start'>
                             <Text fontSize="5xl" fontWeight="semibold">Hello, 我是</Text>
                             <Text fontSize="6xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text' >陳加齊</Text>
-                            <Text color={"gray"}>就讀於彰師資管所，從⼩立志成為電腦工程師</Text>
+                            <Typical
+                            steps={['就讀於彰師資管所', 1500, '從⼩立志成為電腦工程師', 1000]}
+                                loop={Infinity}
+                                wrapper="h2"
+                            />
                         </Box>
                         
                         <Image alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
@@ -52,14 +58,8 @@ export const M1061009Screen = ({route, navigation}) =>{
                 {/* </Flex> */}
             </HStack>
 
-
-
-
             <Flex direction={isNotSmallerScreen ? "row" : "column"} w="100%" maxWidth={{ base: "50vh", md: "130vh", lg: "130vh", xl: "130vh" }}>
                 
-                {/* Big title*/}
-
-
 
                 {/* content*/}
 

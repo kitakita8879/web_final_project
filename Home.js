@@ -18,11 +18,11 @@ export const HomeScreen = ({route, navigation}) =>{
                             <MaterialIcon name="face-man-shimmer" size={120}/>
                             <VStack direction="column" align='start' flexWrap="wrap" w={(isNotSmallerScreen) ? '20vw':'50vw'} >
                                 <Text style={{fontSize:24}}>M1061009 陳加齊</Text>
-                                <Text style={{fontSize:16, color:'gray',marginTop:6,flexWrap:"wrap",alignSelf:'flex-start'}}>簡介</Text>
+                                <Text style={{fontSize:16, color:'gray',marginTop:6,flexWrap:"wrap",alignSelf:'flex-start'}}>就讀於彰師資管所<br/>從⼩立志成為電腦工程師</Text>
                                 
                             </VStack>
                         </HStack>
-                        <Text style={{fontSize:8, color:'blue',opacity: 0.3,alignSelf:'flex-end',justifyContent:'flex-end'}}>了解更多
+                        <Text style={{fontSize:10, color:'blue',opacity: 0.3,alignSelf:'flex-end',justifyContent:'flex-end'}}>了解更多
                             <MaterialIcon name="arrow-right" size={20}/>
                         </Text>
                     </VStack>
@@ -37,7 +37,7 @@ export const HomeScreen = ({route, navigation}) =>{
                                 
                             </VStack>
                         </HStack>
-                        <Text style={{fontSize:8, color:'blue',opacity: 0.3,alignSelf:'flex-end',justifyContent:'flex-end'}}>了解更多
+                        <Text style={{fontSize:10, color:'blue',opacity: 0.3,alignSelf:'flex-end',justifyContent:'flex-end'}}>了解更多
                             <MaterialIcon name="arrow-right" size={20}/>
                         </Text>
                     </VStack>
