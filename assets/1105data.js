@@ -97,3 +97,73 @@ export const projectsList1105 = [
     },
       
 ];
+
+
+
+export const projectsList1009 = [
+    {
+        id: 1,
+        title: "石器時代桌遊",
+        logo: require("./img/1009data/StoneAgeApp.jpg"),
+        link: null,
+        desc: `這是一個瘋狂的點子，為了更方便遊玩石器時代桌遊，因此就把這遊戲直接移植到手機上進行，遊戲規則大致與桌遊相同，可選擇同機遊玩人數，之後每回合玩家輪操作自己的村民，每個顏色代表不同玩家，玩家必須運用有限的資源，來獲取場上的卡牌，得到卡牌即為分數，最後卡牌數量耗盡即遊戲結束，最高得分的玩家獲勝，並有獲勝玩家計分紀錄。`,
+        technologies: ["Mit App Inventor 2", "Stone Age"]
+    },
+    {
+        id: 2,
+        title: "搞笑鬼故事有聲電子書",
+        link: null,
+        logo: require("./img/1009data/StorySound.png"),
+        desc: `菜比巴 一梯退三步有沒有聽過? 這是將知名實況主"魯蛋"說鬼故事影片 弄成有聲電子書APP`,
+        technologies: ["Mit App Inventor 2","魯蛋"]
+    },
+    {
+        id: 3,
+        title: "石器時代大富翁",
+        logo: require("./img/1009data/StoneAgeBattle.png"),
+        link: null,
+        desc: `這是一款可以與人對戰的遊戲，原初是石器時代桌遊上手門檻難度過高，而推出的入門款的類大富翁石器桌遊，為了更方便玩桌遊，因此就把這遊戲直接移植到手機上進行，並且可以透過藍芽連線雙人進行遊玩，最後獲得高分者獲勝`,
+        technologies: ["Mit App Inventor 2", "Stone Age Kid"]
+    },
+    {
+        id: 4,
+        title: "瘋狂小遊戲三合一",
+        logo: require("./img/1009data/3Gamein1.png"),
+        link:  null,
+        desc: `想玩什麼就玩什麼，有小小開心農場，擁有豐富的遊戲系統就像開心農場、撲克21點練練您的手氣、還有幸運拉霸機輸了還會被嗆呢!，以上總共可以玩三款小遊戲的合輯。`,
+        technologies: ["Visual Basic", "Visual Studio"]
+    },
+    {
+        id: 5,
+        title: "17-Friends 一起交朋友",
+        logo: require("./img/1009data/17-Friends.png"),
+        link: "null",
+        desc: `17-Friends採用非機率性的交友方式 強大的聊天功能能夠使用語音通話、視訊通話、螢幕共享、互動遊戲：猜拳、真心話大冒險、及你畫我猜。`,
+        technologies: ["Java","Android Studio", "Firebase Real-time Nosql Database","Agora.io"]
+    },
+    {
+        id: 6,
+        title: "Cloud Test File Compare Tool",
+        logo: require("./img/1009data/CloudTestFileCompareTool.jpg"),
+        link: "null",
+        desc: `透過爬蟲方式解析網址抓曲內部檔案並進行版本比對，本程式還有模組化參數設定能提供未來升級需求做調整。`,
+        technologies: ["Python", "PyQt5"]
+    },
+    {
+        id: 7,
+        title: "Folder File Compare",
+        logo: require("./img/1009data/FolderFileCompare.jpg"),
+        link: null,
+        desc: `能夠選取資料夾內的所有檔案 可以快速進行大量檔案比對，並確認MD5驗證與Word檔案文字內容比對，能夠確認檔案版本更新前後差異。`,
+        technologies: ["Python", "PyQt5"]
+    },
+    {
+        id: 8,
+        title: "Wordle Battle",
+        logo: require("./img/1105data/wordle.png"),
+        link: "https://ncue-webproject-wordle-battle.herokuapp.com/",
+        desc: `與同學一起製作了wordle雙人對戰網頁遊戲，使用express建立伺服器，firebase作為資料庫，並透過heroku託管網站。`,
+        technologies: ["javascript", "css", "html", "heroku"]
+    },
+      
+];
