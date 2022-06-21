@@ -33,7 +33,7 @@ export const M1061105Screen = ({route, navigation}) =>{
 
                 <View style={{width:(isNotSmallerScreen) ? '70vw':'90vw',alignSelf:'center', marginTop:24}}>
                     <View style={styles.edu_app}>
-                        <Text fontWeight="bold" fontSize="3xl" >學歷</Text>
+                        <Text fontWeight="bold" fontSize="3xl" align="center" w={(isNotSmallerScreen) ? '70vw':'90vw'} color="cyan.400"><ICON name="star" size={28}/> 學歷</Text>
                         <View style={{flexDirection:(isNotSmallerScreen) ?"row":"column",alignItems:(isNotSmallerScreen) ?"flex-start":"center"}}>
                             <Image style={[styles.img,{width:100,height:100}]} source={{ uri: 'https://rpage.ncue.edu.tw/var/file/0/1000/img/19/LOGO1.jpg' }}/>
                             <Text fontSize="2xl" color="gray.700" justify="center" alignSelf="center" ml={(isNotSmallerScreen) ?'12':'0'}>彰化師範大學資訊管理學系  數位內容科技與管理所</Text>    
@@ -41,7 +41,7 @@ export const M1061105Screen = ({route, navigation}) =>{
                     </View>
                     
                     <View style={styles.edu_app}>
-                        <Text fontWeight="bold" fontSize="3xl">專長</Text>
+                        <Text fontWeight="bold" fontSize="3xl" align="center" w={(isNotSmallerScreen) ? '70vw':'90vw'} color="cyan.400"><ICON name="code" size={28}/> 專長</Text>
                         <Flex rounded="xl" borderWidth="1px" borderLeftWidth="5px" direction="row" flexWrap="wrap" mt={8} bg="white" borderColor="gray.100" w={(isNotSmallerScreen) ? '70vw':'90vw'} borderLeftColor="blue.100" justify="flex-start" _hover={{shadow: "lg" }}>
                                 
                             <Text color="gray.700" p="4" fontSize="xl" fontWeight="semibold">
@@ -50,7 +50,7 @@ export const M1061105Screen = ({route, navigation}) =>{
                         </Flex>
                     </View>
                 
-                    <Text fontWeight="bold" fontSize="3xl" align="start">作品</Text>
+                    <Text fontWeight="bold" fontSize="3xl" align="center" w={(isNotSmallerScreen) ? '70vw':'90vw'} color="cyan.400"><ICON name="desktop" size={28}/> 作品</Text>
                     <VStack align="start" spacing={4} >
                         <SimpleGrid columns={1} spacing={16} mt={5} w="100%">
                         {projectsList1105.map((project, index) => (
