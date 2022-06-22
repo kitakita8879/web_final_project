@@ -5,7 +5,8 @@ import { useMediaQuery } from '@chakra-ui/media-query';
 import ICON from 'react-native-vector-icons/FontAwesome';
 import MaterialICON from 'react-native-vector-icons/MaterialCommunityIcons';
 import ProjectCard from "./projectCard";
-import { projectsList1105 } from "./assets/1105data";
+import { projectsList1105 } from "./assets/data";
+import Typical from 'react-typical';
 
 export const M1061105Screen = ({route, navigation}) =>{
 
@@ -20,7 +21,11 @@ export const M1061105Screen = ({route, navigation}) =>{
                     <View style={{alignItems:'flex-start',marginTop:(isNotSmallerScreen) ? '0':16}}>
                         <Text fontSize="4xl" fontWeight="semibold">HELLO，我是</Text>
                         <Text fontSize="7xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text'>劉懿霈</Text>
-                        <Text color={"gray" } flexWrap='wrap'>目前就讀於彰師資管數科所，對於程式、繪畫軟體都稍有接觸</Text>
+                        <Typical
+                            steps={['就讀於彰師資管數科所', 1500, '對程式、繪畫軟體都稍有接觸', 1000]}
+                                loop={Infinity}
+                                wrapper="h2"
+                            />
                     </View>
                     <Image  style={[styles.img,{marginTop:(isNotSmallerScreen) ? '0':12,marginBottom:(isNotSmallerScreen) ? '0':12}]} source={{ uri: 'https://cdn.pixabay.com/photo/2015/07/09/22/45/tree-838667_960_720.jpg' }}/>
                 </View>

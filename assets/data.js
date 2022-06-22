@@ -137,7 +137,7 @@ export const projectsList1009 = [
         id: 5,
         title: "17-Friends 一起交朋友",
         logo: require("./img/1009data/17-Friends.png"),
-        link: "null",
+        link: null,
         desc: `17-Friends採用非機率性的交友方式 強大的聊天功能能夠使用語音通話、視訊通話、螢幕共享、互動遊戲：猜拳、真心話大冒險、及你畫我猜。`,
         technologies: ["Java","Android Studio", "Firebase Real-time Nosql Database","Agora.io"]
     },
@@ -145,7 +145,7 @@ export const projectsList1009 = [
         id: 6,
         title: "Cloud Test File Compare Tool",
         logo: require("./img/1009data/CloudTestFileCompareTool.jpg"),
-        link: "null",
+        link: null,
         desc: `透過爬蟲方式解析網址抓曲內部檔案並進行版本比對，本程式還有模組化參數設定能提供未來升級需求做調整。`,
         technologies: ["Python", "PyQt5"]
     },

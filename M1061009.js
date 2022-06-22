@@ -6,11 +6,9 @@ import { Flex, Stack,Circle,VStack,Box, Heading, Spacer,Text,HStack,SimpleGrid,G
 import { StyleSheet,View, TouchableOpacity, ScrollView, Button } from 'react-native';
 import MaterialICON from 'react-native-vector-icons/MaterialCommunityIcons';
 import ICON from 'react-native-vector-icons/FontAwesome';
-import { projectsList1009 } from "./assets/1105data";
+import { projectsList1009 } from "./assets/data";
 import ProjectCard from "./projectCard";
-import Typical from 'react-typical'
-
-
+import Typical from 'react-typical';
 
 
 export const M1061009Screen = ({route, navigation}) =>{
